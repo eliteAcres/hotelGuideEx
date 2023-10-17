@@ -117,8 +117,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Optional: Add media queries for responsive design */
+
 @media (min-width: 768px) {
     .button {
+        /*max-width: 100%; /* Adjust maximum width for smaller screens */
         width: 150px; /* Adjust the width for larger screens if needed */
         height: 150px; /* Set the same height as the width for a square button */
     }
@@ -126,6 +129,7 @@ body {
 
 
 /*
+
 .button {
     margin: 10px;
     padding: 20px;
