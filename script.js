@@ -91,16 +91,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+    // Function to navigate back to page1.html
+    function goBack() {
+        window.location.href = "page1.html";
+    }
+
+    // Attach event listeners to buttons
     var zoomInButton = document.getElementById("zoomInButton");
     var zoomOutButton = document.getElementById("zoomOutButton");
     var backButton = document.querySelector(".backButton");
 
     zoomInButton.addEventListener("click", zoomIn);
     zoomOutButton.addEventListener("click", zoomOut);
-
-    backButton.addEventListener("click", function () {
-        window.location.href = "page1.html";
-    });
+    backButton.addEventListener("click", goBack);
+    //backButton.addEventListener("click", function () {
+    //    window.location.href = "page1.html";
+    //});
 
 
     displayedImage.addEventListener("mousedown", startDragging);
