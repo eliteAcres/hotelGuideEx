@@ -144,6 +144,20 @@ body {
     transition: background-color 0.3s ease;
 }*/
 
+/* display image format */
+.image-container {
+    text-align: center; /* Center the image horizontally */
+    /*overflow: hidden; /* Hide overflow for zoom effect */
+}
+
+#displayedImage {
+    max-width: 100%; /* Make the image responsive to screen size */
+    height: auto; /* Maintain aspect ratio */
+    /*transition: transform 0.3s ease; /* Add transition effect for smooth zooming */
+}
+
+
+
 .button1 {
     background-color: #3498db;
     color: white;
@@ -201,6 +215,24 @@ body {
         padding: 20px 40px; /* Adjust padding for larger screens */
     }
 }
+
+/* back button for page1-1.html */
+#backButton {
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+
+    /* Add hover effect */
+    &:hover {
+        background-color: #2980b9; /* Darker blue on hover */
+    }
+}
+
 
 #formButton {
     margin-top: 20px; /* Add some space between the form button and other elements */
