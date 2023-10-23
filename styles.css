@@ -27,7 +27,6 @@ body {
 }
 
 
-
 .logo {
     text-align: center;
     padding: 20px 0; /* Add padding to create space between logo and content */
@@ -71,8 +70,6 @@ body {
 }
 
 
-
-
 /* Button style for index.html */
 .index-button {
     margin: 10px; /* Add spacing between buttons */
@@ -89,6 +86,103 @@ body {
 .index-button:hover {
     background-color: #2980b9; /* Darker blue on hover */
 }
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+
+
+
+
+
+/* Smiley face */
+.popup .smiley-face {
+    width: 40px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup .smiley-face .eye {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.popup .smiley-face .mouth {
+    width: 20px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+
+
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+
 
 
 /* Common button styles */
