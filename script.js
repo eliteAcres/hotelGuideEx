@@ -97,12 +97,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Attach event listeners to buttons
-    var zoomInButton = document.getElementById("zoomInButton");
-    var zoomOutButton = document.getElementById("zoomOutButton");
+    //var zoomInButton = document.getElementById("zoomInButton");
+    //var zoomOutButton = document.getElementById("zoomOutButton");
     var backButton = document.querySelector(".backButton");
 
-    zoomInButton.addEventListener("click", zoomIn);
-    zoomOutButton.addEventListener("click", zoomOut);
+    //zoomInButton.addEventListener("click", zoomIn);
+    //zoomOutButton.addEventListener("click", zoomOut);
     backButton.addEventListener("click", goBack);
     //backButton.addEventListener("click", function () {
     //    window.location.href = "page1.html";
@@ -127,31 +127,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // Initial zoom level
-    var zoomLevel = 1;
+    //var zoomLevel = 1;
 
     // Zoom in function
-    function zoomIn() {
-        zoomLevel *= 2; // Double the zoom level
-        updateZoom();
-    }
+    //function zoomIn() {
+    //    zoomLevel *= 2; // Double the zoom level
+    //    updateZoom();
+    //}
 
     // Zoom out function
-    function zoomOut() {
-        zoomLevel /= 2; // Halve the zoom level
-        updateZoom();
-    }
+    //function zoomOut() {
+    //    zoomLevel /= 2; // Halve the zoom level
+    //    updateZoom();
+    //}
 
     // Update the zoom level and apply the CSS transform property
-    function updateZoom() {
-        displayedImage.style.transform = "scale(" + zoomLevel + ")";
-    }
+    //function updateZoom() {
+    //    displayedImage.style.transform = "scale(" + zoomLevel + ")";
+    //}
 
     // Attach zoom functions to buttons with specific magnification factors
-    var zoomInButton = document.getElementById("zoomInButton");
-    zoomInButton.addEventListener("click", zoomIn);
+    //var zoomInButton = document.getElementById("zoomInButton");
+    //zoomInButton.addEventListener("click", zoomIn);
 
-    var zoomOutButton = document.getElementById("zoomOutButton");
-    zoomOutButton.addEventListener("click", zoomOut);
+    //var zoomOutButton = document.getElementById("zoomOutButton");
+    //zoomOutButton.addEventListener("click", zoomOut);
 
 
     // Back button click event
