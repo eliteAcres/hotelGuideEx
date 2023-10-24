@@ -450,6 +450,46 @@ body {
 
 
 
+/* CSS for prevButton and nextButton */
+.prevButton,
+.nextButton {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #d33bb2;
+    color: #0b5061;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    outline: none; /* Remove outline on focus for better visual appearance */
+}
+
+.prevButton:hover,
+.nextButton:hover {
+    background-color: #b7df26; /* Change background color on hover */
+    color: white;
+}
+
+/* Optional: Add a box shadow for a subtle 3D effect */
+.prevButton,
+.nextButton {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Increase font size and padding for larger screens */
+@media (min-width: 768px) {
+    .prevButton,
+    .nextButton {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
 .button-container {
     position: relative; /* Set position to relative for the button container */
     z-index: 1; /* Set a lower z-index than the logo to keep buttons below the logo */
