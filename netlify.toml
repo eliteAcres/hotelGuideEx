@@ -3,3 +3,30 @@
   publish = "_site/"  # Replace this with your Jekyll output directory
   functions = "netlify/functions/"  # Replace this with your functions directory if applicable
   command = "bundle exec jekyll build"  # Use Bundler to execute Jekyll build
+
+
+[[headers]]
+  # Set Cache-Control headers for HTML files to not cache (no-store)
+  for = "*.html"
+    [headers.values]
+    Cache-Control = "no-store, must-revalidate"
+
+[[headers]]
+  # Set Cache-Control headers for CSS, JavaScript, and font files to cache for 7 days
+  for = ["*.css", "*.js", "*.woff", "*.woff2"]
+    [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  # Set Cache-Control headers for images to cache for 30 days
+  for = ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.svg", "*.ico"]
+    [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  # Set Cache-Control headers for API routes to not cache (no-store)
+  for = "/api/*"
+    [headers.values]
+    Cache-Control = "no-store, must-revalidate"
+
+# Additional headers configuration can be added as needed
