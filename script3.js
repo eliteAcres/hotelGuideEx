@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var button4 = document.getElementById("suggestButton");
 
     button4.addEventListener("click", function () {
-        window.open("https://forms.office.com/r/QW32gJv71w?origin=lprLink", "_blank");
+        window.open("https://forms.office.com/r/QW32gJv71w", "_blank");
     });
 });
 
