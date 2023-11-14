@@ -248,8 +248,8 @@ body {
     display: inline-block;
     align-items: center;
     justify-content: center;
-    width: 150px; /* Set maximum width for the button */
-    height: 150px; /* Set the same height as the width to create a square button */
+    width: 130px; /* Set maximum width for the button */
+    height: 130px;  /* Set the same height as the width to create a square button */
     box-sizing: border-box;
     text-decoration: none; /* Remove the underline style for anchor tags */
     text-align: center;  /*Center the text inside the button */
@@ -258,7 +258,7 @@ body {
     overflow: hidden; /* Hide overflowing content */
     vertical-align: middle; /* Vertically align the button */
     white-space: pre-line; /* Allow text to wrap and break into multiple lines */
-    font-size: 16px;
+    font-size: 13px;
     transition: background-color 0.3s ease;
 }
 
@@ -460,7 +460,7 @@ body {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
     outline: none; /* Remove outline on focus for better visual appearance */
 }
