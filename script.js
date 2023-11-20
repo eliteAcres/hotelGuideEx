@@ -2,10 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var buttonsData = [
         { label: "Emergency \n紧急情况", link: "images/emergencycall.png" },
         { label: "TV Channel \n电视频道", link: "images/tvchannel.png" },
-        { label: "Surrounding \n周围环境", link: "images/mapoftownsemporna1.png" },
         { label: "Earth Hour \n地球一小时", link: "images/earthhour.png" },
-        { label: "Energy Saving \n节能", link: "images/energysaving.png" },
-        { label: "Go Green \n环保绿化", link: "images/waygogreen.png" }
+        { label: "Energy Saving \n节能", link: "images/energysaving.png" }
     ];
 
     var buttonsContainer = document.getElementById("buttons-container");
